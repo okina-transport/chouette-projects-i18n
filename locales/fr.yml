@@ -30,19 +30,19 @@ fr:
       1-GTFS-Route-2: Donnée renseignée pour route_short_name ou sinon route_long_name
       1-NEPTUNE-XML-1: Syntaxe XML W3C
       1-NEPTUNE-XML-2: Schéma défini par la XSD du profil TRIDENT/NEPTUNE
-      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineAndCommonFiles: Duplicate element identifiers across line and common files
-      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineFiles: Duplicate element identifiers across more than one line file
-      1-NETEXPROFILE-InvalidIdStructure: Invalid id structure on element
-      1-NETEXPROFILE-MissingReferenceVersionAttribute: Missing version attribute on reference to local elements
-      1-NETEXPROFILE-MissingVersionAttribute: Missing version attribute on elements with id attribute
-      1-NETEXPROFILE-SchemaValidationError: XML Schema validation error
-      1-NETEXPROFILE-ServiceFrame-Line-PublicCode: Missing PublicCode on Line
-      1-NETEXPROFILE-TimetableFrame_ServiceJourney_TimetabledPassingTime_Same_Value: ArrivalTime is identical to DepartureTime
-      1-NETEXPROFILE-UnapprovedCodespaceDefined: Unapproved Codespace
-      1-NETEXPROFILE-UnknownProfile: Unknown NeTEx profile
-      1-NETEXPROFILE-UnresolvedReferenceToCommonElements: Unresolved reference to elements in common files
-      1-NETEXPROFILE-UseOfUnapprovedCodespace: Use of unapproved codespace
-      1-NETEXPROFILE-TimetableFrame-ServiceJourney-OperatorRef-Or-Line-OperatorRef: Missing OperatorRef on ServiceJourney (not defined on Line)
+      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineAndCommonFiles: Eléments d'identifications dupliqués entre des fichiers de ligne et des fichiers communs
+      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineFiles: Eléments d'identifications en double sur plusieurs fichiers de ligne
+      1-NETEXPROFILE-InvalidIdStructure: Structure d'identifiant invalide sur l'élément
+      1-NETEXPROFILE-MissingReferenceVersionAttribute: Attribut de version manquant sur la référence aux éléments locaux
+      1-NETEXPROFILE-MissingVersionAttribute: Attribut de version manquant sur les éléments avec attribut id
+      1-NETEXPROFILE-SchemaValidationError: Erreur de validation du schéma XML
+      1-NETEXPROFILE-ServiceFrame-Line-PublicCode: PublicCode manquant dans Line
+      1-NETEXPROFILE-TimetableFrame_ServiceJourney_TimetabledPassingTime_Same_Value: ArrivalTime est identique au DepartureTime
+      1-NETEXPROFILE-UnapprovedCodespaceDefined: Codespace non approuvé
+      1-NETEXPROFILE-UnknownProfile: Profil NeTex inconnu
+      1-NETEXPROFILE-UnresolvedReferenceToCommonElements: Référence non résolue aux éléments dans les fichiers communs
+      1-NETEXPROFILE-UseOfUnapprovedCodespace: Utilisation d'un codespace non approuvé
+      1-NETEXPROFILE-TimetableFrame-ServiceJourney-OperatorRef-Or-Line-OperatorRef: OperatorRef manquant dans ServiceJourney (non défini dans Line)
       2-DATABASE-AccessPoint-1: Contrôle de la valeur d’un arrêt associé lors de la sauvegarde d’un point d’accès en base
       2-DATABASE-ConnectionLink-1: Contrôle de la valeur des extrémités d’une correspondance lors de sa sauvegarde en base
       2-DATABASE-JourneyPattern-1: Contrôle de la valeur de la route associée lors de la sauvegarde d’une mission commerciale en base
@@ -236,29 +236,29 @@ fr:
       detail_1_netexprofile_compositeframe_codespace: NSR Codespace doit être déclaré (Xmlns=NSR, XmlnsUrl=http://www.rutebanken.org/ns/nsr). Toutes les reférences à StopPlaces doivent pointer vers des données de l'espace NSR
       detail_1_netexprofile_compositeframe_validityconditions: Un CompositeFrame doit définir un ValidityCondition valide pour toutes les données dans le CompositeFrame
       detail_1_netexprofile_novalidityconditionsonserviceorservicecalendarortimetableframe: Ni ServiceFrame, ServiceCaledarFrame, ni TimetableFrame n'ont défini de conditions de validité
-      detail_1_netexprofile_validityconditionsonframesinsidecompositeframe: ValidityConditions définie à l'intérieur d'un cadre à l'intérieur d'un CompositeFrame
-      detail_1_netexprofile_duplicateidentificatorsacrosslineandcommonfiles: L'élément ID %{error_value} a déjà été défini dans un fichier commun et ne peut pas être réutilisé fans le fichier ligne
+      detail_1_netexprofile_validityconditionsonframesinsidecompositeframe: ValidityConditions défini à l'intérieur d'un cadre à l'intérieur d'un CompositeFrame
+      detail_1_netexprofile_duplicateidentificatorsacrosslineandcommonfiles: L'élément ID %{error_value} a déjà été défini dans un fichier commun et ne peut pas être réutilisé dans le fichier ligne
       detail_1_netexprofile_duplicateidentificatorsacrosslinefiles: L'ID %{error_value} a déjà été défini dans un fichier de ligne précédent
       detail_1_netexprofile_invalididstructure: Structure d'ID incorrecte sur l'élément %{error_value}
       detail_1_netexprofile_invalididstructurename: Structure d'ID incorrecte %{error_value}. Attendu %{reference_value}
       detail_1_netexprofile_missingreferenceversionattribute: L'élément (reference) %{error_value} ne dispose pas de l'attribut de version
       detail_1_netexprofile_missingversionattribute: L'élément (reference) %{error_value} ne dispose pas de l'attribut de l'attribut de version
       detail_1_netexprofile_referencetoillegalelement: L'élément (reference) de %{error_value} n'est pas autorisé de l'élément %{reference_value}. En général, un élément nommé XXXXRef peut être seulement une référence aux éléments si le type est XXXX
-      detail_1_netexprofile_resourceframe_organisations_authority_companynumber: L'élément CompanyNumber manquant dans Authority
+      detail_1_netexprofile_resourceframe_organisations_authority_companynumber: CompanyNumber manquant dans Authority
       detail_1_netexprofile_resourceframe_organisations_authority_contactdetails: ContactDetails manquant dans Authority
       detail_1_netexprofile_resourceframe_organisations_authority_contactdetails_urlorphoneoremail: Url, Téléphone ou Email doit être défini dans ContactDetails de Authority
       detail_1_netexprofile_resourceframe_organisations_authority_legalname: Nom légal manquant dans Autorité
       detail_1_netexprofile_resourceframe_organisations_operator_companynumber: Numéro de la Compagnie manquant dans Opérateur
       detail_1_netexprofile_resourceframe_organisations_operator_contactdetails: Détails Contact manquants dans Opérateur
-      detail_1_netexprofile_resourceframe_organisations_operator_contactdetails_urlorphoneoremail: Au moins un des URL, téléphone ou e-mail doit être défini pour ContactDetails sur l'opérateur
-      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails: Elément CustomerServiceContactDetails manquant sur l'opérateur
-      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails_url: Élément d'URL manquant pour CustomerServiceContactDetails sur l'opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_contactdetails_urlorphoneoremail: Soit URL, téléphone ou e-mail doit être défini pour ContactDetails sur l'opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails: CustomerServiceContactDetails manquant sur l'opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails_url: URL manquant pour CustomerServiceContactDetails sur l'opérateur
       detail_1_netexprofile_resourceframe_organisations_operator_name: Nom manquant dans Opérateur
       detail_1_netexprofile_resourceframe_organisations_operator_legalname: Nom légal manquant dans Opérateur
       detail_1_netexprofile_schemavalidationerror: 'XML Schema validation error: %{error_value}'
       detail_1_netexprofile_serviceframe: L'élément ServiceFrame est manquant
       detail_1_netexprofile_serviceframe_journeypattern_passengerstopassignment_quayref: Référence au Quai %{source_objectid} non trouvée dans le registre d'arrêt
-      detail_1_netexprofile_serviceframe_line: There should be exactly 1 Line pr file
+      detail_1_netexprofile_serviceframe_line: Il devrait y avoir exactement 1 Ligne par fichier
       detail_1_netexprofile_serviceframe_line_name: Nom manquant dans Ligne
       detail_1_netexprofile_serviceframe_line_groupoflinesnetwork: Une ligne doit faire référence à un groupe de lignes ou un réseau par l'élement RepresentedByGroupRef
       detail_1_netexprofile_serviceframe_line_transportsub: Mode de transport manquant dans Ligne
