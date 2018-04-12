@@ -36,7 +36,8 @@ fr:
       1-NETEXPROFILE-MissingReferenceVersionAttribute: Attribut de version manquant sur la référence aux éléments locaux
       1-NETEXPROFILE-MissingVersionAttribute: Attribut de version manquant sur les éléments avec attribut id
       1-NETEXPROFILE-SchemaValidationError: Erreur de validation du schéma XML
-      1-NETEXPROFILE-ServiceFrame-Line-PublicCode: PublicCode manquant dans Line
+      1-NETEXPROFILE-ServiceFrame-Line-PublicCode: Code public manquant dans Line
+      1-NETEXPROFILE-ServiceFrame_Line_TransportSubmode: Sous mode de transport manquant dans Ligne
       1-NETEXPROFILE-TimetableFrame_ServiceJourney_TimetabledPassingTime_Same_Value: ArrivalTime est identique au DepartureTime
       1-NETEXPROFILE-UnapprovedCodespaceDefined: Codespace non approuvé
       1-NETEXPROFILE-UnknownProfile: Profil NeTex inconnu
@@ -251,7 +252,7 @@ fr:
       detail_1_netexprofile_resourceframe_organisations_operator_companynumber: Numéro de la Compagnie manquant dans Opérateur
       detail_1_netexprofile_resourceframe_organisations_operator_contactdetails: Détails Contact manquants dans Opérateur
       detail_1_netexprofile_resourceframe_organisations_operator_contactdetails_urlorphoneoremail: Soit URL, téléphone ou e-mail doit être défini pour ContactDetails sur l'opérateur
-      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails: CustomerServiceContactDetails manquant sur l'opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails: CustomerServiceContactDetails manquant dans Opérateur
       detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails_url: URL manquant pour CustomerServiceContactDetails sur l'opérateur
       detail_1_netexprofile_resourceframe_organisations_operator_name: Nom manquant dans Opérateur
       detail_1_netexprofile_resourceframe_organisations_operator_legalname: Nom légal manquant dans Opérateur
@@ -479,8 +480,8 @@ fr:
       detail_3_journeypattern_1: La mission %{source_label} (%{source_objectid}) utilise les mêmes arrêts que la mission %{target_0_label} (%{target_0_objectid}) - nombre d'arrêts = %{error_value}
       detail_3_journeypattern_3: La mission %{source_label} (%{source_objectid}) référence l'arrêt %{target_0_label} (%{target_0_objectid}) avec le mode de transport %{reference_value}, mais la ligne spécifiée est incompatible le mode de transport %{error_value}
       detail_3_journeypattern_4: La mission %{source_label} (%{source_objectid}) permet l'embarquement à l'arrivée
-      detail_3_journeypattern_rutebanken_1_1: Pour la mission %{source_label} (%{source_objectid}, la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) is de %{error_value} mètres. La distance minimum est de %{reference_value} mètres
-      detail_3_journeypattern_rutebanken_1_2: Pour la mission %{source_label} (%{source_objectid}, la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) is de %{error_value} mètres. La distance maximum est de %{reference_value} mètres
+      detail_3_journeypattern_rutebanken_1_1: Pour la mission %{source_label} (%{source_objectid}, la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) est de %{error_value} mètres. La distance minimum est de %{reference_value} mètres
+      detail_3_journeypattern_rutebanken_1_2: Pour la mission %{source_label} (%{source_objectid}, la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) est de %{error_value} mètres. La distance maximum est de %{reference_value} mètres
       detail_3_journeypattern_rutebanken_2: La mission %{source_label} (%{source_objectid}), arrêt %{target_0_label} (%{target_0_objectid}) est présent deux fois de suite
       detail_3_journeypattern_rutebanken_3: La mission %{source_label} (%{source_objectid}) a une liste d'arrêts identiques à la mission %{target_0_label} (%{target_0_objectid})
       detail_3_journeypattern_rutebanken_4: La mission %{source_label} (%{source_objectid}) doit contenir au moins deux arrêts
@@ -496,16 +497,24 @@ fr:
       detail_3_route_7: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission
       detail_3_route_8: La séquence d'arrêt %{source_label} (%{source_objectid}) a %{error_value} arrêts non utilisés par des missions
       detail_3_route_9: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission desservant l'ensemble de ses arrêts
+      detail_3_route_rutebanken_2: L'itinéraire %{source_label} (%{source_objectid}), arrêt %{target_0_label} (%{target_0_objectid}) est présent deux fois de suite
+      detail_3_route_rutebanken_3: L'itinéraire %{source_label} (%{source_objectid}) a son ordre des arrêts identique à l'itinéraire %{target_0_label} (%{target_0_objectid})
+      detail_3_route_rutebanken_4: L'itinéraire %{source_label} (%{source_objectid}) doit contenir au moins deux arrêts
       detail_3_routesection_1: la section de tracé %{source_label} (%{source_objectid}) est trop éloignée de ses arrêts
       detail_3_stoparea_1: L'arrêt %{source_label} (%{source_objectid}) n'est pas géolocalisé
       detail_3_stoparea_2: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop près de l''arrêt %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value} (mètres)'
       detail_3_stoparea_3: Les arrêts %{source_label} (%{source_objectid} et %{target_0_objectid}) sont desservis par les mêmes lignes
       detail_3_stoparea_4: L'arrêt %{source_label} (%{source_objectid}) est en dehors du périmètre de contrôle
       detail_3_stoparea_5: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value} (mètres)'
+      detail_rutebanken_3_stoppoint_1: Le StopPoint %{source_objectid} dans l'itinéraire %{target_0_objectid} fait référence à un StopArea inconnu avec pour ID %{error_value}
+      detail_rutebanken_3_stoppoint_2: Le StopPoint %{source_objectid} se réfère à un StopArea parent %{target_0_objectid} (%{target_0_label}), pas à un StopArea enfant (Quay/BoardingPosition)
+      detail_rutebanken_3_stoppoint_3: Le StopPoint %{source_objectid} dans l'itinéraire %{target_1_label} à l'arrêt %{target_0_objectid} (%{target_0_label}) ne permet pas de monter
       detail_3_vehiclejourney_1: 'Temps d''attente trop long à l''Arrêt %{target_0_label} (%{target_0_objectid}): %{error_value} > %{reference_value} (minutes)'
       detail_3_vehiclejourney_2_1: La course %{source_label} (%{source_objectid}) a des horaires décroissants entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
       detail_3_vehiclejourney_2_2: La course %{source_label} (%{source_objectid}) a une vitesse %{error_value} < %{reference_value} km/h entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
       detail_3_vehiclejourney_2_3: La course %{source_label} (%{source_objectid}) a une vitesse %{error_value} > %{reference_value} km/h entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
+      detail_3_vehiclejourney_2_4: La course %{source_label} (%{source_objectid}) aux arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) ont les mêmes horaires de départ et d'arrivée %{error_value}
+      detail_3_vehiclejourney_2_5: La vitesse de la course %{source_label} (%{source_objectid}) entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) est de %{error_value} km/h. La vitesse maximum autorisée est de %{reference_value} km/h
       detail_3_vehiclejourney_3: 'Trop grande différence de durée de trajet entre les arrêts %{target_1_label} (%{target_1_objectid}) et %{target_2_label} (%{target_2_objectid}) pour la course %{source_label} (%{source_objectid}) par rapport à la course suivante %{target_0_label} (%{target_0_objectid}): %{error_value} > %{reference_value} (minutes)'
       detail_3_vehiclejourney_3_1: 'Trop grande différence de durée de trajet entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) pour la course %{source_label} (%{source_objectid}) par rapport à la moyenne des courses de la mission: %{error_value} > %{reference_value} (minutes)'
       detail_3_vehiclejourney_4: La course %{source_label} (%{source_objectid}) n'a pas de calendrier d'application
