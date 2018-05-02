@@ -279,6 +279,7 @@ fr:
       detail_1_netexprofile_serviceframe_journeypattern_first_stoppointinjourneypattern_destinationdisplayref: DestinationDisplayRef manquante au premier StopPointInJourneyPattern
       detail_1_netexprofile_serviceframe_passengerstopassignment_quayref: QuayRef manquant sur PassengerStopAssignment
       detail_1_netexprofile_serviceframe_passengerstopassignment_scheduledstoppointref: ScheduledStopPointRef manquant sur PassengerStopAssignment
+      detail_1_netexprofile_serviceframe_stoppointinjourneypattern_noboardingnoalighting: Le point d'arrêt du trajet n'a pas de zone d'embarquement ou de zone de descente
       detail_1_netexprofile_serviceframe_stoppointinjourneypattern_repeating_destinationdisplayref: StopPointInJourneyPattern déclare la référence au même DestinationDisplay que le précédent StopPointInJourneyPattern
       detail_1_netexprofile_serviceframe_timingpoints: Points de synchronisation d'éléments inattendus. Contenu ignoré
       detail_1_netexprofile_siteframe: Élément SiteFrame inattendu. Le contenu de SiteFrame est ignoré
@@ -344,6 +345,7 @@ fr:
       detail_2_gtfs_stop_2: La colonne location_type n'est pas renseignée
       detail_2_gtfs_stop_3: 'Le nom et la description de l''arrêt (%{source_objectid}) sont identiques : ''%{error_value}'''
       detail_2_gtfs_stop_4: L'arrêt (%{source_objectid}) de type station ne peut appartenir à une autre station (%{error_value})
+      detail_2_gtfs_stop_5: Les coordonnées du point d'arrêt sont de 0,0
       detail_2_neptune_accesslink_1: La liaison d'accès %{source_objectid} référence %{error_value} qui n'existe pas
       detail_2_neptune_accesslink_2: Sur la liaison d'accès %{source_objectid}, les références startOfLink = %{error_value} et endOfLink = %{reference_value} sont de même type
       detail_2_neptune_accesspoint_1: L'accès %{source_objectid} référence un arrêt parent (containedIn = %{error_value}) inexistant
