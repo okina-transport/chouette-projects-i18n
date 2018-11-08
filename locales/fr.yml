@@ -30,18 +30,20 @@ fr:
       1-GTFS-Route-2: Donnée renseignée pour route_short_name ou sinon route_long_name
       1-NEPTUNE-XML-1: Syntaxe XML W3C
       1-NEPTUNE-XML-2: Schéma défini par la XSD du profil TRIDENT/NEPTUNE
-      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineAndCommonFiles: 
-      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineFiles: 
-      1-NETEXPROFILE-InvalidIdStructure: 
-      1-NETEXPROFILE-MissingReferenceVersionAttribute: 
-      1-NETEXPROFILE-MissingVersionAttribute: 
-      1-NETEXPROFILE-SchemaValidationError: Validité du schéma par rapport au profil NETEX
-      1-NETEXPROFILE-ServiceFrame-Line-PublicCode: 
-      1-NETEXPROFILE-TimetableFrame_ServiceJourney_TimetabledPassingTime_Same_Value: 
-      1-NETEXPROFILE-UnapprovedCodespaceDefined: 
-      1-NETEXPROFILE-UnknownProfile: 
-      1-NETEXPROFILE-UnresolvedReferenceToCommonElements: 
-      1-NETEXPROFILE-UseOfUnapprovedCodespace: 
+      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineAndCommonFiles: Eléments d'identifications dupliqués entre des fichiers de ligne et des fichiers communs
+      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineFiles: Eléments d'identifications en double sur plusieurs fichiers de ligne
+      1-NETEXPROFILE-InvalidIdStructure: Structure d'identifiant invalide sur l'élément
+      1-NETEXPROFILE-MissingReferenceVersionAttribute: Attribut de version manquant sur la référence aux éléments locaux
+      1-NETEXPROFILE-MissingVersionAttribute: Attribut de version manquant sur les éléments avec attribut id
+      1-NETEXPROFILE-SchemaValidationError: Erreur de validation du schéma XML
+      1-NETEXPROFILE-ServiceFrame-Line-PublicCode: Code public manquant dans Line
+      1-NETEXPROFILE-ServiceFrame_Line_TransportSubmode: Sous mode de transport manquant dans Ligne
+      1-NETEXPROFILE-TimetableFrame_ServiceJourney_TimetabledPassingTime_Same_Value: ArrivalTime est identique au DepartureTime
+      1-NETEXPROFILE-UnapprovedCodespaceDefined: Codespace non approuvé
+      1-NETEXPROFILE-UnknownProfile: Profil NeTex inconnu
+      1-NETEXPROFILE-UnresolvedReferenceToCommonElements: Référence non résolue aux éléments dans les fichiers communs
+      1-NETEXPROFILE-UseOfUnapprovedCodespace: Utilisation d'un codespace non approuvé
+      1-NETEXPROFILE-TimetableFrame-ServiceJourney-OperatorRef-Or-Line-OperatorRef: OperatorRef manquant dans ServiceJourney (non défini dans Line)
       2-DATABASE-AccessPoint-1: Contrôle de la valeur d’un arrêt associé lors de la sauvegarde d’un point d’accès en base
       2-DATABASE-ConnectionLink-1: Contrôle de la valeur des extrémités d’une correspondance lors de sa sauvegarde en base
       2-DATABASE-JourneyPattern-1: Contrôle de la valeur de la route associée lors de la sauvegarde d’une mission commerciale en base
@@ -158,6 +160,7 @@ fr:
       3-JourneyPattern-3: Vérification de double définition de missions
       3-Line-1: 2 lignes ne doivent pas avoir le même nom
       3-Line-2: Toutes les lignes doivent posséder des séquences d’arrêt
+      3-Line-4: Le mode de transport par ligne ne correspond pas au mode de transport par arrêt
       3-Route-1: Deux arrêts d’un même arrêt commercial ne peuvent pas se succéder dans une séquence d’arrêts
       3-Route-2: Vérification de la séquence inverse
       3-Route-3: La distance entre deux arrêts successifs de la séquence doit être dans une fourchette paramétrable
@@ -231,50 +234,91 @@ fr:
       detail_1_gtfs_route_2: les valeurs des champs route_long_name et route_short_name ne sont pas renseignées
       detail_1_neptune_xml_1: "%{source_label} : %{error_value}"
       detail_1_neptune_xml_2: "%{source_label} : %{error_value}"
-      detail_1_netexprofile_compositeframe_codespace: 
-      detail_1_netexprofile_compositeframe_validityconditions: 
-      detail_1_netexprofile_duplicateidentificatorsacrosslineandcommonfiles: 
-      detail_1_netexprofile_duplicateidentificatorsacrosslinefiles: 
-      detail_1_netexprofile_invalididstructure: 
-      detail_1_netexprofile_invalididstructurename: 
-      detail_1_netexprofile_missingreferenceversionattribute: 
-      detail_1_netexprofile_missingversionattribute: 
-      detail_1_netexprofile_referencetoillegalelement: 
-      detail_1_netexprofile_resourceframe_organisations_authority_companynumber: 
-      detail_1_netexprofile_resourceframe_organisations_authority_contactdetails: 
-      detail_1_netexprofile_resourceframe_organisations_authority_legalname: 
-      detail_1_netexprofile_resourceframe_organisations_operator_companynumber: 
-      detail_1_netexprofile_resourceframe_organisations_operator_contactdetails: 
-      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails: 
-      detail_1_netexprofile_resourceframe_organisations_operator_legalname: 
-      detail_1_netexprofile_schemavalidationerror: 
-      detail_1_netexprofile_serviceframe_journeypattern_passengerstopassignment_quayref: 
-      detail_1_netexprofile_serviceframe_line_groupoflinesnetwork: 
-      detail_1_netexprofile_serviceframe_line_publiccode: 
-      detail_1_netexprofile_serviceframe_network: 
-      detail_1_netexprofile_serviceframe_network_name: 
-      detail_1_netexprofile_serviceframe_servicejourneypattern: 
-      detail_1_netexprofile_siteframe: 
-      detail_1_netexprofile_timetableframe_servicejourney_timetabledpassingtime_departuretime: 
-      detail_1_netexprofile_timetableframe_servicejourney_timetabledpassingtime_same_value: 
-      detail_1_netexprofile_unapprovedcodespacedefined: 
-      detail_1_netexprofile_unknownprofile: 
-      detail_1_netexprofile_unresolvedexternalreference: 
-      detail_1_netexprofile_unresolvedreferencetocommonelements: 
-      detail_1_netexprofile_useofunapprovedcodespace: 
-      detail_1_regtopp_concistency_1: 
-      detail_1_regtopp_concistency_2: 
-      detail_1_regtopp_field_value_1: 
-      detail_1_regtopp_file_dko: 
-      detail_1_regtopp_file_dst: 
-      detail_1_regtopp_file_gav: 
-      detail_1_regtopp_file_hpl: 
-      detail_1_regtopp_file_lin: 
-      detail_1_regtopp_file_mrk: 
-      detail_1_regtopp_file_stp: 
-      detail_1_regtopp_file_tda: 
-      detail_1_regtopp_file_tix: 
-      detail_1_regtopp_file_tms: 
+      detail_1_netexprofile_compositeframe_codespace: NSR Codespace doit être déclaré (Xmlns=NSR, XmlnsUrl=http://www.rutebanken.org/ns/nsr). Toutes les reférences à StopPlaces doivent pointer vers des données de l'espace NSR
+      detail_1_netexprofile_compositeframe_validityconditions: Un CompositeFrame doit définir un ValidityCondition valide pour toutes les données dans le CompositeFrame
+      detail_1_netexprofile_novalidityconditionsonserviceorservicecalendarortimetableframe: Ni ServiceFrame, ServiceCaledarFrame, ni TimetableFrame n'ont défini de conditions de validité
+      detail_1_netexprofile_validityconditionsonframesinsidecompositeframe: ValidityConditions défini à l'intérieur d'un cadre à l'intérieur d'un CompositeFrame
+      detail_1_netexprofile_duplicateidentificatorsacrosslineandcommonfiles: L'élément ID %{error_value} a déjà été défini dans un fichier commun et ne peut pas être réutilisé dans le fichier ligne
+      detail_1_netexprofile_duplicateidentificatorsacrosslinefiles: L'ID %{error_value} a déjà été défini dans un fichier de ligne précédent
+      detail_1_netexprofile_invalididstructure: Structure d'ID incorrecte sur l'élément %{error_value}
+      detail_1_netexprofile_invalididstructurename: Structure d'ID incorrecte %{error_value}. Attendu %{reference_value}
+      detail_1_netexprofile_missingreferenceversionattribute: L'élément (reference) %{error_value} ne dispose pas de l'attribut de version
+      detail_1_netexprofile_missingversionattribute: L'élément (reference) %{error_value} ne dispose pas de l'attribut de l'attribut de version
+      detail_1_netexprofile_referencetoillegalelement: L'élément (reference) de %{error_value} n'est pas autorisé de l'élément %{reference_value}. En général, un élément nommé XXXXRef peut être seulement une référence aux éléments si le type est XXXX
+      detail_1_netexprofile_resourceframe_organisations_authority_companynumber: CompanyNumber manquant dans Authority
+      detail_1_netexprofile_resourceframe_organisations_authority_contactdetails: ContactDetails manquant dans Authority
+      detail_1_netexprofile_resourceframe_organisations_authority_contactdetails_urlorphoneoremail: Url, Téléphone ou Email doit être défini dans ContactDetails de Authority
+      detail_1_netexprofile_resourceframe_organisations_authority_legalname: Nom légal manquant dans Autorité
+      detail_1_netexprofile_resourceframe_organisations_operator_companynumber: Numéro de la Compagnie manquant dans Opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_contactdetails: Détails Contact manquants dans Opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_contactdetails_urlorphoneoremail: Soit URL, téléphone ou e-mail doit être défini pour ContactDetails sur l'opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails: CustomerServiceContactDetails manquant dans Opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_customerservicecontactdetails_url: URL manquant pour CustomerServiceContactDetails sur l'opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_name: Nom manquant dans Opérateur
+      detail_1_netexprofile_resourceframe_organisations_operator_legalname: Nom légal manquant dans Opérateur
+      detail_1_netexprofile_schemavalidationerror: 'XML Schema validation error: %{error_value}'
+      detail_1_netexprofile_serviceframe: L'élément ServiceFrame est manquant
+      detail_1_netexprofile_serviceframe_journeypattern_passengerstopassignment_quayref: Référence au Quai %{source_objectid} non trouvée dans le registre d'arrêt
+      detail_1_netexprofile_serviceframe_line: Il devrait y avoir exactement 1 Ligne par fichier
+      detail_1_netexprofile_serviceframe_line_name: Nom manquant dans Ligne
+      detail_1_netexprofile_serviceframe_line_groupoflinesnetwork: Une ligne doit faire référence à un groupe de lignes ou un réseau par l'élement RepresentedByGroupRef
+      detail_1_netexprofile_serviceframe_line_transportsub: Mode de transport manquant dans Ligne
+      detail_1_netexprofile_serviceframe_line_transportsubmode: Sous-mode de transport manquant dans Ligne
+      detail_1_netexprofile_serviceframe_line_illegaltransportmode: Mode de transport illégal dans Ligne
+      detail_1_netexprofile_serviceframe_line_illegaltransportsubmode: Sous-mode de transport illégal dans Ligne
+      detail_1_netexprofile_serviceframe_network_groupofline_name: Nom de l'élément manquant dans GroupOfLines
+      detail_1_netexprofile_serviceframe_line_publiccode: PublicCode manquant dans Line
+      detail_1_netexprofile_serviceframe_network: L'élément Network manquant dans ServiceFrame
+      detail_1_netexprofile_serviceframe_network_autorityref: AuthorityRef manquant dans Network
+      detail_1_netexprofile_serviceframe_network_name: Nom de l'élément manquant dans Network
+      detail_1_netexprofile_serviceframe_route_name: Nom de la route manquant
+      detail_1_netexprofile_serviceframe_route_pointsinsequence: pointsInSequence manquant dans Route
+      detail_1_netexprofile_serviceframe_servicejourneypattern: Utilisez JourneyPattern au lieu de ServiceJourneyPattern
+      detail_1_netexprofile_serviceframe_destinationdisplay_fronttext: FrontText manquant on DestinationDisplay
+      detail_1_netexprofile_serviceframe_destinationdisplay_via_destinationdisplayref: DestinationDisplayRef manquant dans Via
+      detail_1_netexprofile_serviceframe_journeypattern_first_stoppointinjourneypattern_destinationdisplayref: DestinationDisplayRef manquante au premier StopPointInJourneyPattern
+      detail_1_netexprofile_serviceframe_passengerstopassignment_quayref: QuayRef manquant sur PassengerStopAssignment
+      detail_1_netexprofile_serviceframe_passengerstopassignment_scheduledstoppointref: ScheduledStopPointRef manquant sur PassengerStopAssignment
+      detail_1_netexprofile_serviceframe_stoppointinjourneypattern_noboardingnoalighting: Le point d'arrêt du trajet n'a pas de zone d'embarquement ou de zone de descente
+      detail_1_netexprofile_serviceframe_stoppointinjourneypattern_repeating_destinationdisplayref: StopPointInJourneyPattern déclare la référence au même DestinationDisplay que le précédent StopPointInJourneyPattern
+      detail_1_netexprofile_serviceframe_timingpoints: Points de synchronisation d'éléments inattendus. Contenu ignoré
+      detail_1_netexprofile_siteframe: Élément SiteFrame inattendu. Le contenu de SiteFrame est ignoré
+      detail_1_netexprofile_timetableframe: Elément manquant TimetableFrame
+      detail_1_netexprofile_timetableframe_servicejourney_timetabledpassingtime_departuretime: Tous les TimetabledPassingTime, excepté le dernier, doivent avoir un DepartureTime
+      detail_1_netexprofile_timetableframe_servicejourney_timetabledpassingtime_same_value: ArrivalTime est identique au DepartureTime
+      detail_1_netexprofile_timetableframe_servicejourney_timetabledpassingtime_last_arrivaltime: Dernier TimetabledPassingTime doit être identique au ArrivalTime
+      detail_1_netexprofile_timetableframe_servicejourney_operatorref_or_line_operatorref: OperatorRef manquant sur ServiceJourney non défini sur Ligne
+      detail_1_netexprofile_timetableframe_servicejourney_transportmodeoverride: En cas de substitution de Line TransportMode ou de TransportSubmode sur un serviceJourney, les deux éléments doivent être présents
+      detail_1_netexprofile_timetableframe_servicejourney_missingtimetabledpassingtime: ServiceJourney %{source_objectid} ne spécifie pas le temps de passage pour tous StopPointInJourneyPattern
+      detail_1_netexprofile_timetableframe_servicejourney_duplicatewithdifferentversion: ServiceJourney est répété avec une version différente - seulement les dayTypes ajoutés
+      detail_1_netexprofile_unapprovedcodespacedefined: L'espace de code %{error_value} ne figure pas dans la liste des espaces de code valides pour cet espace de données. Les espaces de code valides sont %{reference_value}
+      detail_1_netexprofile_unknownprofile: NeTEx profile inconnu '%{error_value}'
+      detail_1_netexprofile_unresolvedexternalreference: Référence non résolue '%{error_value}' aux données de référence externes
+      detail_1_netexprofile_unresolvedreferencetocommonelements: Référence non résolue '%{error_value}' aux éléments dans les fichiers communs
+      detail_1_netexprofile_useofunapprovedcodespace: L'ID% {error_value} utilise un espace de code non déclaré xmlns
+      detail_1_netexprofile_duplicateidentificatorsacrosscommonfiles: L'identifiant '%{error_value}' a également été déclaré dans au moins un autre fichier commun
+      detail_1_netexprofile_servicecalendarframe_daytypewithoutassignment: DayType %{source_objectid} n'est affecté à aucune date ou période du calendrier
+      detail_1_netexprofile_servicecalendarframe_emptyservicecalendar: ServiceCalendar ne contient ni DayTypes ni DayTypeAssignments
+      detail_1_netexprofile_servicecalendarframe_servicecalendar_fromdate: FromDate manquant dans ServiceCalendar
+      detail_1_netexprofile_servicecalendarframe_servicecalendar_todate: ToDate manquant dans ServiceCalendar
+      detail_1_netexprofile_servicecalendarframe_servicecalendar_fromdateaftertodate: FromDate ne peut pas être après ToDate dans ServiceCalendar
+      detail_1_netexprofile_validbetween_incomplete: ValidBetween manquant dans FromDate/ToDate ou les deux
+      detail_1_netexprofile_validbetween_fromdateaftertodate: FromDate ne peut pas être après ToDate dans ValidBetween
+      detail_1_netexprofile_availabilitycondition_incomplete: AvailabilityCondition doit avoir FromDate et ToDate ou les deux présents
+      detail_1_netexprofile_availabilitycondition_fromdateaftertodate: FromDate ne peut pas être après ToDate dans AvailabilityCondition
+      detail_1_regtopp_concistency_1: "%{reference_value}"
+      detail_1_regtopp_concistency_2: "%{reference_value}"
+      detail_1_regtopp_field_value_1: "%{reference_value}"
+      detail_1_regtopp_file_dko: Error reading file %{filename}.
+      detail_1_regtopp_file_dst: Error reading file %{filename}.
+      detail_1_regtopp_file_gav: Error reading file %{filename}.
+      detail_1_regtopp_file_hpl: Error reading file %{filename}.
+      detail_1_regtopp_file_lin: Error reading file %{filename}.
+      detail_1_regtopp_file_mrk: Error reading file %{filename}.
+      detail_1_regtopp_file_stp: Error reading file %{filename}.
+      detail_1_regtopp_file_tda: Error reading file %{filename}.
+      detail_1_regtopp_file_tix: Error reading file %{filename}.
+      detail_1_regtopp_file_tms: Error reading file %{filename}.
       detail_2_database_accesspoint_1: L'accès  %{source_objectid} importé  n'appartient pas au même arrêt que celui déjà en base
       detail_2_database_connectionlink_1_1: La correspondance %{source_objectid} importée n'a pas le même arrêt de départ que celle déjà en base
       detail_2_database_connectionlink_1_2: La correspondance %{source_objectid} importée n'a pas le même arrêt d'arrivée que celle déjà en base
@@ -301,6 +345,7 @@ fr:
       detail_2_gtfs_stop_2: La colonne location_type n'est pas renseignée
       detail_2_gtfs_stop_3: 'Le nom et la description de l''arrêt (%{source_objectid}) sont identiques : ''%{error_value}'''
       detail_2_gtfs_stop_4: L'arrêt (%{source_objectid}) de type station ne peut appartenir à une autre station (%{error_value})
+      detail_2_gtfs_stop_5: Les coordonnées du point d'arrêt sont de 0,0
       detail_2_neptune_accesslink_1: La liaison d'accès %{source_objectid} référence %{error_value} qui n'existe pas
       detail_2_neptune_accesslink_2: Sur la liaison d'accès %{source_objectid}, les références startOfLink = %{error_value} et endOfLink = %{reference_value} sont de même type
       detail_2_neptune_accesspoint_1: L'accès %{source_objectid} référence un arrêt parent (containedIn = %{error_value}) inexistant
@@ -377,46 +422,46 @@ fr:
       detail_2_neptune_vehiclejourneyatstop_2: 'Un horaire de la course %{source_objectid} référence une autre course : vehicleJourneyId = %{error_value}'
       detail_2_neptune_vehiclejourneyatstop_3: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts selon l'ordre de la séquence d'arrêts %{error_value}
       detail_2_neptune_vehiclejourneyatstop_4: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts de sa mission %{error_value}
-      detail_2_regtopp_dko_1: 
-      detail_2_regtopp_dko_2: 
-      detail_2_regtopp_dko_3: 
-      detail_2_regtopp_dko_4: 
-      detail_2_regtopp_dst_1: 
-      detail_2_regtopp_dst_2: 
-      detail_2_regtopp_dst_3: 
-      detail_2_regtopp_dst_4: 
-      detail_2_regtopp_gav_1: 
-      detail_2_regtopp_gav_2: 
-      detail_2_regtopp_gav_3: 
-      detail_2_regtopp_gav_4: 
-      detail_2_regtopp_hpl_1: 
-      detail_2_regtopp_hpl_2: 
-      detail_2_regtopp_hpl_3: 
-      detail_2_regtopp_hpl_4: 
-      detail_2_regtopp_lin_1: 
-      detail_2_regtopp_lin_2: 
-      detail_2_regtopp_lin_3: 
-      detail_2_regtopp_lin_4: 
-      detail_2_regtopp_mrk_1: 
-      detail_2_regtopp_mrk_2: 
-      detail_2_regtopp_mrk_3: 
-      detail_2_regtopp_mrk_4: 
-      detail_2_regtopp_stp_1: 
-      detail_2_regtopp_stp_2: 
-      detail_2_regtopp_stp_3: 
-      detail_2_regtopp_stp_4: 
-      detail_2_regtopp_tda_1: 
-      detail_2_regtopp_tda_2: 
-      detail_2_regtopp_tda_3: 
-      detail_2_regtopp_tda_4: 
-      detail_2_regtopp_tix_1: 
-      detail_2_regtopp_tix_2: 
-      detail_2_regtopp_tix_3: 
-      detail_2_regtopp_tix_4: 
-      detail_2_regtopp_tms_1: 
-      detail_2_regtopp_tms_2: 
-      detail_2_regtopp_tms_3: 
-      detail_2_regtopp_tms_4: 
+      detail_2_regtopp_dko_1: "%{reference_value}"
+      detail_2_regtopp_dko_2: "%{reference_value}"
+      detail_2_regtopp_dko_3: "%{reference_value}"
+      detail_2_regtopp_dko_4: "%{reference_value}"
+      detail_2_regtopp_dst_1: "%{reference_value}"
+      detail_2_regtopp_dst_2: "%{reference_value}"
+      detail_2_regtopp_dst_3: "%{reference_value}"
+      detail_2_regtopp_dst_4: "%{reference_value}"
+      detail_2_regtopp_gav_1: "%{reference_value}"
+      detail_2_regtopp_gav_2: "%{reference_value}"
+      detail_2_regtopp_gav_3: "%{reference_value}"
+      detail_2_regtopp_gav_4: "%{reference_value}"
+      detail_2_regtopp_hpl_1: "%{reference_value}"
+      detail_2_regtopp_hpl_2: "%{reference_value}"
+      detail_2_regtopp_hpl_3: "%{reference_value}"
+      detail_2_regtopp_hpl_4: "%{reference_value}"
+      detail_2_regtopp_lin_1: "%{reference_value}"
+      detail_2_regtopp_lin_2: "%{reference_value}"
+      detail_2_regtopp_lin_3: "%{reference_value}"
+      detail_2_regtopp_lin_4: "%{reference_value}"
+      detail_2_regtopp_mrk_1: "%{reference_value}"
+      detail_2_regtopp_mrk_2: "%{reference_value}"
+      detail_2_regtopp_mrk_3: "%{reference_value}"
+      detail_2_regtopp_mrk_4: "%{reference_value}"
+      detail_2_regtopp_stp_1: "%{reference_value}"
+      detail_2_regtopp_stp_2: "%{reference_value}"
+      detail_2_regtopp_stp_3: "%{reference_value}"
+      detail_2_regtopp_stp_4: "%{reference_value}"
+      detail_2_regtopp_tda_1: "%{reference_value}"
+      detail_2_regtopp_tda_2: "%{reference_value}"
+      detail_2_regtopp_tda_3: "%{reference_value}"
+      detail_2_regtopp_tda_4: "%{reference_value}"
+      detail_2_regtopp_tix_1: "%{reference_value}"
+      detail_2_regtopp_tix_2: "%{reference_value}"
+      detail_2_regtopp_tix_3: "%{reference_value}"
+      detail_2_regtopp_tix_4: "%{reference_value}"
+      detail_2_regtopp_tms_1: "%{reference_value}"
+      detail_2_regtopp_tms_2: "%{reference_value}"
+      detail_2_regtopp_tms_3: "%{reference_value}"
+      detail_2_regtopp_tms_4: "%{reference_value}"
       detail_3_accesslink_1: 'Sur le lien d''accès %{source_label} (%{source_objectid}), la distance entre l''arrêt %{target_0_label} (%{target_0_objectid}) et l''accès %{target_1_label} (%{target_1_objectid}) est trop grande : distance %{error_value} > %{reference_value} (mètres)'
       detail_3_accesslink_2: 'Sur le lien d''accès %{source_label} (%{source_objectid}), la longueur du lien : %{error_value} est supérieure à %{reference_value} (mètres) est inférieure à la distance à vol d''oiseau entre l''arrêt %{target_0_label} (%{target_0_objectid}) et l''accès %{target_1_label} (%{target_1_objectid}) (mètres)'
       detail_3_accesslink_3_1: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse par défaut %{error_value} km/h est supérieure à %{reference_value} km/h
@@ -435,6 +480,13 @@ fr:
       detail_3_facility_1: L'équipement %{source_label} (%{source_objectid}) n'est pas géolocalisé
       detail_3_facility_2: 'L''équipement %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{areaName} (%{areaId}) : distance %{error_value} > %{reference_value} (mètres)'
       detail_3_journeypattern_1: La mission %{source_label} (%{source_objectid}) utilise les mêmes arrêts que la mission %{target_0_label} (%{target_0_objectid}) - nombre d'arrêts = %{error_value}
+      detail_3_journeypattern_3: La mission %{source_label} (%{source_objectid}) référence l'arrêt %{target_0_label} (%{target_0_objectid}) avec le mode de transport %{reference_value}, mais la ligne spécifiée est incompatible le mode de transport %{error_value}
+      detail_3_journeypattern_4: La mission %{source_label} (%{source_objectid}) permet l'embarquement à l'arrivée
+      detail_3_journeypattern_rutebanken_1_1: Pour la mission %{source_label} (%{source_objectid}, la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) est de %{error_value} mètres. La distance minimum est de %{reference_value} mètres
+      detail_3_journeypattern_rutebanken_1_2: Pour la mission %{source_label} (%{source_objectid}, la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) est de %{error_value} mètres. La distance maximum est de %{reference_value} mètres
+      detail_3_journeypattern_rutebanken_2: La mission %{source_label} (%{source_objectid}), arrêt %{target_0_label} (%{target_0_objectid}) est présent deux fois de suite
+      detail_3_journeypattern_rutebanken_3: La mission %{source_label} (%{source_objectid}) a une liste d'arrêts identiques à la mission %{target_0_label} (%{target_0_objectid})
+      detail_3_journeypattern_rutebanken_4: La mission %{source_label} (%{source_objectid}) doit contenir au moins deux arrêts
       detail_3_line_1: 'La ligne %{source_label} (%{source_objectid}) a le même nom que la ligne %{target_0_label} (%{target_0_objectid}), sur le même réseau '
       detail_3_line_2: La ligne %{source_label} (%{source_objectid}) n'a pas de séquence d'arrêts
       detail_3_route_1: Sur la séquence d'arrêt %{source_label} (%{source_objectid}), l'arrêt %{target_0_label} (%{target_0_objectid}) est desservi 2 fois consécutivement
@@ -447,16 +499,24 @@ fr:
       detail_3_route_7: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission
       detail_3_route_8: La séquence d'arrêt %{source_label} (%{source_objectid}) a %{error_value} arrêts non utilisés par des missions
       detail_3_route_9: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission desservant l'ensemble de ses arrêts
+      detail_3_route_rutebanken_2: L'itinéraire %{source_label} (%{source_objectid}), arrêt %{target_0_label} (%{target_0_objectid}) est présent deux fois de suite
+      detail_3_route_rutebanken_3: L'itinéraire %{source_label} (%{source_objectid}) a son ordre des arrêts identique à l'itinéraire %{target_0_label} (%{target_0_objectid})
+      detail_3_route_rutebanken_4: L'itinéraire %{source_label} (%{source_objectid}) doit contenir au moins deux arrêts
       detail_3_routesection_1: la section de tracé %{source_label} (%{source_objectid}) est trop éloignée de ses arrêts
       detail_3_stoparea_1: L'arrêt %{source_label} (%{source_objectid}) n'est pas géolocalisé
       detail_3_stoparea_2: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop près de l''arrêt %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value} (mètres)'
       detail_3_stoparea_3: Les arrêts %{source_label} (%{source_objectid} et %{target_0_objectid}) sont desservis par les mêmes lignes
       detail_3_stoparea_4: L'arrêt %{source_label} (%{source_objectid}) est en dehors du périmètre de contrôle
       detail_3_stoparea_5: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value} (mètres)'
+      detail_rutebanken_3_stoppoint_1: Le StopPoint %{source_objectid} dans l'itinéraire %{target_0_objectid} fait référence à un StopArea inconnu avec pour ID %{error_value}
+      detail_rutebanken_3_stoppoint_2: Le StopPoint %{source_objectid} se réfère à un StopArea parent %{target_0_objectid} (%{target_0_label}), pas à un StopArea enfant (Quay/BoardingPosition)
+      detail_rutebanken_3_stoppoint_3: Le StopPoint %{source_objectid} dans l'itinéraire %{target_1_label} à l'arrêt %{target_0_objectid} (%{target_0_label}) ne permet pas de monter
       detail_3_vehiclejourney_1: 'Temps d''attente trop long à l''Arrêt %{target_0_label} (%{target_0_objectid}): %{error_value} > %{reference_value} (minutes)'
       detail_3_vehiclejourney_2_1: La course %{source_label} (%{source_objectid}) a des horaires décroissants entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
       detail_3_vehiclejourney_2_2: La course %{source_label} (%{source_objectid}) a une vitesse %{error_value} < %{reference_value} km/h entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
       detail_3_vehiclejourney_2_3: La course %{source_label} (%{source_objectid}) a une vitesse %{error_value} > %{reference_value} km/h entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
+      detail_3_vehiclejourney_2_4: La course %{source_label} (%{source_objectid}) aux arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) ont les mêmes horaires de départ et d'arrivée %{error_value}
+      detail_3_vehiclejourney_2_5: La vitesse de la course %{source_label} (%{source_objectid}) entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) est de %{error_value} km/h. La vitesse maximum autorisée est de %{reference_value} km/h
       detail_3_vehiclejourney_3: 'Trop grande différence de durée de trajet entre les arrêts %{target_1_label} (%{target_1_objectid}) et %{target_2_label} (%{target_2_objectid}) pour la course %{source_label} (%{source_objectid}) par rapport à la course suivante %{target_0_label} (%{target_0_objectid}): %{error_value} > %{reference_value} (minutes)'
       detail_3_vehiclejourney_3_1: 'Trop grande différence de durée de trajet entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) pour la course %{source_label} (%{source_objectid}) par rapport à la moyenne des courses de la mission: %{error_value} > %{reference_value} (minutes)'
       detail_3_vehiclejourney_4: La course %{source_label} (%{source_objectid}) n'a pas de calendrier d'application
@@ -576,8 +636,10 @@ fr:
       tests: Tests
       tests-1-2-error: Tests de validation requis par la conformité au format
       tests-1-2-warning: Tests de validation recommandés par la conformité au format
+      tests-1-2-info: Tests de validation suggérés pour la conformité au format
       tests-3-4-error: Tests complémentaires requis par le contrôle qualité
       tests-3-4-warning: Tests complémentaires recommandés par le contrôle qualité
+      tests-3-4-info: Tests de validation supplémentaires suggérés par le contrôle qualité
       timetable: Calendrier
       timetables: Calendriers
       transport_datas: Données de transport
