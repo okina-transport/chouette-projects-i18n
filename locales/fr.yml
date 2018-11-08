@@ -35,7 +35,7 @@ fr:
       1-NETEXPROFILE-InvalidIdStructure: 
       1-NETEXPROFILE-MissingReferenceVersionAttribute: 
       1-NETEXPROFILE-MissingVersionAttribute: 
-      1-NETEXPROFILE-SchemaValidationError: 
+      1-NETEXPROFILE-SchemaValidationError: Validité du schéma par rapport au profil NETEX
       1-NETEXPROFILE-ServiceFrame-Line-PublicCode: 
       1-NETEXPROFILE-TimetableFrame_ServiceJourney_TimetabledPassingTime_Same_Value: 
       1-NETEXPROFILE-UnapprovedCodespaceDefined: 
