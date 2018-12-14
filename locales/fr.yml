@@ -28,6 +28,7 @@ fr:
       1-GTFS-Common-9: Colonnes obligatoires
       1-GTFS-Route-1: Présence d'au moins une des 2 colonnes route_short_name ou route_long_name
       1-GTFS-Route-2: Donnée renseignée pour route_short_name ou sinon route_long_name
+      1-GTFS-Route-3: Route_short_name vide, remplacé par route_id
       1-NEPTUNE-XML-1: Syntaxe XML W3C
       1-NEPTUNE-XML-2: Schéma défini par la XSD du profil TRIDENT/NEPTUNE
       1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineAndCommonFiles: Eléments d'identifications dupliqués entre des fichiers de ligne et des fichiers communs
